@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgba(230, 144, 33, 0.966);
+}
+h1{
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    display:grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 50px
+    
+    
+    
+}
+.images{
+    padding: 20px;
+    text-align: center;
+}
+
+.images img{
+    height: 250px;
+    margin: 20px;
+}
+.add_to_cart{
+    opacity: 0;
+    cursor: pointer;
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: chocolate;
+}
+.images:hover .add_to_cart {
+    bottom: 50px;
+    opacity: 1;
+    
+}
+
+/* cart page */
+.container-products{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    justify-content: center;
+    
+
+}
+.heading{
+    padding: 10px;
+    border: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.product-title{
+    width: 60%;
+}
+
+.price {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    
+}
+.quantity{
+    display: flex;
+    width: 10%;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+.product{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 60% 20% 10% 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:2px solid gray;
+}
+.product img{
+    height: 250px; 
+}
+.products{
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.basketTotalTitle{
+    display: flex;
+    
+    justify-content: left;
+    
+
+}
+.checkout{
+    margin: 30px;
+    height: 60px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
